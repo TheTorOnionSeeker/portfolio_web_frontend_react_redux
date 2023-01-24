@@ -1,7 +1,7 @@
 .card-header {
   width: 100%;
 	height: 100%;
-	background-color: #a1b5cb;
+	background-color: #1923b4;
 }
 .remove-bg {
   filter: brightness(0);
@@ -13,7 +13,7 @@
   justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-	background-color: #a1b5cb;
+	background-color: #1923b4;
   font-weight: 600;
 }
 #LinkedInLogo{
@@ -47,6 +47,7 @@
 }
 
 .row{
+  background-color: #5770fa;
   padding: 20px;
   display: flex;
   flex-direction: column;

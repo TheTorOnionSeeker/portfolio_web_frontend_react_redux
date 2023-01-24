@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './Card.css';
+import '../styles/Card.css';
 import linkedinLogo from '../img/linkedin.png';
 import githubLogo from '../img/github.png'
 
@@ -38,34 +38,11 @@ export default function Card() {
       </div>
       <div className="col-xs-6 col-sm-6 col-md-12 col-lg-12">
         <h2>{character.name}</h2>
-        <div id="info-company">{character.role}</div>
+        <div id="info-company">
+          <h2>{character.role}</h2>
+        </div>
       </div>
     </div>
-
-
-    {/* <div>
-        <img id='img' src={character.image} alt={character.name} />
-        <div className="card-body">
-          <h5 className="card-title">{character.name}</h5>
-          <div className="row">
-            <div className="col-sm-4 col-md-4 col-lg-4">
-              <p>{character.role}</p>
-            </div>
-            <div className="col-sm-4 col-md-4 col-lg-4">
-                {character.projects.map(e=>
-                    <p>{e}</p>)}
-            </div>
-            <div className="col-sm-4 col-md-4 col-lg-4">
-                {character.skills.map(e=>
-                    <p>{e}</p>)}
-            </div>
-            <div className="col-sm-4 col-md-4 col-lg-4">
-                {character.education.map(e=>
-                    <p>{e}</p>)}
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   )
 }
