@@ -1,15 +1,33 @@
 .Home {
   text-align: center;
-  background-image: url('./25335.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.Home-logo {
-  height: 40vmin;
-  pointer-events: none;
+#video_background {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 }
+
+.Home-logo {
+  height: 500px;
+  width: 500px;
+  pointer-events: none;
+  border-radius: 250px;
+}
+
+/* .remove-bg {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .Home-logo {
@@ -26,7 +44,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: midnightblue;
+  border-radius: 80%;
 }
 
 .Home-header p {
@@ -35,7 +53,7 @@
 }
 
 .Home-link {
-  color: #0e102e;
+  color: bisque;
 }
 
 @keyframes Home-logo-spin {

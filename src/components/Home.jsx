@@ -1,5 +1,6 @@
-import React from 'react';
-import logo from '../1985052.svg';
+import React, { useEffect } from 'react';
+import logo from '../../src/img/My project-1.png';
+import video from '../../src/matrixBinario.mp4'
 import '../Home.css';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -9,17 +10,25 @@ export default function Home() {
 
   const dispatch=useDispatch();
 
+  useEffect(() => {
+    dispatch(actions.getCharacterDetail());
+  }, [])
+  
+
   return (
     <>
     <div className="Home">
+      <video id="video_background" loop autoPlay muted>
+        <source src={video} type="video/mp4"/>
+      </video>
       <header className="Home-header">
-        <img src={logo} className="Home-logo" alt="logo" />
-        <p>
-          Click on my name to see more about me.
-        </p>
         <Link to={'/details'}>
-            <h1 onClick={()=>dispatch(actions.getCharacterDetail())} className="Home-link">Guillermo Oscar Núñez</h1>
+          <img src={logo} className="Home-logo" alt="logo" /><br />
         </Link>
+        <br />
+        <p>
+          Click on the vortex to enter and see more about me.
+        </p>
       </header>
     </div>
     </>

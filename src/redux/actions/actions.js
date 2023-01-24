@@ -1,22 +1,6 @@
 import axios from "axios";
-/* import { createSlice } from "@reduxjs/toolkit"; */
 
 export const GET_CHARACTER_DETAIL = "GET_CHARACTER_DETAIL";
-
-/* export const getCharacterDetailSlice=createSlice({
-    name:'reducer',
-    initialState:{
-        characterDetails:[]
-      },
-    reducers:{
-        GET_CHARACTER_DETAIL:(state)=>{
-            return {
-                ...state,
-                characterDetails: action.payload
-              };
-        }
-    }
-}) */
 
 export const getCharacterDetail = () => {
     return function(dispatch){

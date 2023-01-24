@@ -1,5 +1,3 @@
-/* import { configureStore} from "@reduxjs/toolkit";
-import {getCharacterDetailSlice} from './slices'; */
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from '../reducer/reducer';
 import thunk from 'redux-thunk';
@@ -15,9 +13,3 @@ const store = createStore(
 );
 
 export default store;
-
-/* export const store=configureStore({
-    reducer:{
-        details:getCharacterDetailSlice.reducer,
-    },
-}) */
