@@ -2,7 +2,8 @@ import React from 'react';
 /* import 'react-circular-progressbar/dist/styles.css'; */
 import '../styles/Section.css';
 import { CircularProgressbar,CircularProgressbarWithChildren } from 'react-circular-progressbar';
-import javaLogo from '../img/java.png'
+import javaLogo from '../img/java.png';
+import javascriptLogo from '../img/js.png';
 import { useSelector } from 'react-redux';
 
 export default function Section() {
@@ -11,11 +12,102 @@ export default function Section() {
 
   return (
     <>
-    {console.log(character)}
-    <div class="row">
-        <h1>Experiencia Laboral</h1>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-11">
+    <div className='row'>
+        <h1>Hard Skills</h1><br />
+        <div className="col-lg-1"></div>
+        <div className="col-lg-11"></div>
+    </div>
+    <div id='row'>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[0]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: 3 }} src={javaLogo} alt={character.hard_skills[0]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[0]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[1]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[1]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[1]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[2]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[2]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[2]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[3]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: 3 }} src={javascriptLogo} alt={character.hard_skills[3]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[3]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[4]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[4]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[4]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[5]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[5]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[5]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[6]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[6]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[6]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[7]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[7]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[7]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[8]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[8]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[8]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[9]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[9]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[9]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[10]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[10]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[10]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[11]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[11]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[11]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+        <CircularProgressbarWithChildren value={character.percentage_hard_skills[12]}>
+        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[12]} />
+        <div style={{ fontSize: 20, marginTop: 5 }}>
+          <strong>{character.hard_skills[12]}</strong>
+        </div>
+        </CircularProgressbarWithChildren>
+    </div>
+    <div className='row'>
+        <h1>Soft Skills</h1><br />
+        <div className="col-lg-1"></div>
+        <div className="col-lg-11"></div>
+    </div>
+    <div id='row_soft_skills'>
+    </div>
+    <div className="row">
+        <h1>Proyectos</h1>
+        <div className="col-lg-1"></div>
+        <div className="col-lg-11">
             <ul>
             <li>
                 <h1>Trabajo 1</h1> - <h3>(años)</h3>
@@ -40,10 +132,10 @@ export default function Section() {
     </div>
 
 
-    <div class="row">
+    <div className="row">
         <h1>Educación</h1>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-11">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-11">
             <ul>
             <li>
                 <h1>Estudio 1</h1> - <h3>(años)</h3>
@@ -65,90 +157,6 @@ export default function Section() {
             </li>
             </ul>
         </div>
-    </div>
-    <div id='row'>
-        <h1>Hard Skills</h1><br />
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[0]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[0]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[0]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[1]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[1]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[1]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[2]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[2]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[2]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[3]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[3]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[3]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[4]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[4]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[4]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[5]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[5]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[5]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[6]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[6]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[6]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[7]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[7]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[7]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[8]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[8]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[8]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[9]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[9]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[9]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[10]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[10]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[10]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[11]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[11]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[11]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-        <CircularProgressbarWithChildren value={character.percentage_hard_skills[12]}>
-        <img className='remove-bg' style={{ width: 100, marginTop: -5 }} src={javaLogo} alt={character.hard_skills[12]} />
-        <div style={{ fontSize: 25, marginTop: 5 }}>
-          <strong>{character.hard_skills[12]}</strong>
-        </div>
-        </CircularProgressbarWithChildren>
-    </div>
-    <div id='row_soft_skills'>
-        <h1>Soft Skills</h1><br />
     </div>
 
 {/* <h1>Hard Skills</h1>

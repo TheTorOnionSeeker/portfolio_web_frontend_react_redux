@@ -2,6 +2,8 @@
     width: 200px;
     height: 200px;
     margin: 25px;
+    background-color: rgb(120, 130, 219);
+    border-radius: 50%;
 }
 .CircularProgressbar-path {
     stroke: rgb(17, 0, 255);
@@ -13,16 +15,17 @@
     fill: rgb(17, 0, 255);
 }
 .CircularProgressbar-background {
-    fill: green;
+    fill: rgb(134, 163, 134);
 }
 .remove-bg {
-    filter: brightness(1.1);
+    filter: brightness(1);
     mix-blend-mode: multiply;
   }
 #row,#row_soft_skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #5770fa;
+    background-color: #212338;
     justify-content: space-between;
+    color: blanchedalmond;
 }
