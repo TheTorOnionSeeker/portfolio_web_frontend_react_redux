@@ -27,7 +27,7 @@ export default function Home() {
         </Link>
         <br />
         <p>
-          Click on the vortex to enter and see more about me.
+          Haga clic en el vórtice para entrar y ver más sobre mí.
         </p>
       </header>
     </div>
